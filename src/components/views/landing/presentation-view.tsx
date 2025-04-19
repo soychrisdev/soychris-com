@@ -13,7 +13,7 @@ export const PresentationView = () => {
         Soy{" "}
         <HoverCard>
           <HoverCardTrigger asChild>
-            <span className="underline animate-gradient-x bg-clip-text text-transparent bg-gradient-to-r from-blue-950 via-blue-300 to-blue-950 bg-[length:300%_300%] ">
+            <span className="underline animate-gradient-x bg-clip-text text-transparent bg-gradient-to-r dark:from-cyan-50 dark:via-cyan-900 dark:to-blue-50 from-blue-950 via-blue-300 to-blue-950 bg-[length:300%_300%] ">
               Christian Mesina
             </span>
           </HoverCardTrigger>
