@@ -5,7 +5,7 @@ interface Heading1Props {
 
 export const Heading1 = ({ children, className = "" }: Heading1Props) => {
   return (
-    <h1 className={`text-4xl font-bold leading-tight ${className}`}>
+    <h1 className={`text-4xl font-bold leading-tight capitalize ${className}`}>
       {children}
     </h1>
   );

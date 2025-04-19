@@ -17,7 +17,7 @@ export const Navbar = () => {
               home
             </Link>
           </div>
-          <div className=" flex items-center space-x-4">
+          <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center space-x-4">
               <ThemeModeToggle />
               <Button className="uppercase" asChild variant="outline" size="lg">
