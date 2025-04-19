@@ -44,6 +44,26 @@
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
+  @keyframes blink {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.1);
+    }
+  }
+
+  @keyframes nod {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
   @keyframes accordion-down {
     from {
       height: 0;
@@ -60,6 +80,51 @@
     to {
       height: 0;
     }
+  }
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes slide-vertical {
+  0%,
+  20% {
+    transform: translateY(0%);
+  }
+  33%,
+  53% {
+    transform: translateY(-100%);
+  }
+  66%,
+  86% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 4s infinite;
+  }
+  .animate-nod {
+    animation: nod 2s infinite ease-in-out;
+  }
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 5s ease infinite;
+  }
+  .animate-slide-vertical {
+    display: inline-block;
+    animation: slide-vertical 6s infinite ease-in-out;
   }
 }
 

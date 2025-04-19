@@ -1,11 +1,21 @@
-import { ThemeModeToggle } from "@/components/theme-toggle";
+import { AuroraHero } from "@/components/views/aurora-effect";
+import { PresentationView } from "@/components/views/landing/presentation-view";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        PREVIEW
-        <ThemeModeToggle />
+    <div className="min-h-screen">
+      <AuroraHero />
+      <main className="flex flex-col row-start-2 p-8 sm:items-start items-center justify-items-center">
+        <div className="bg-muted/50 backdrop-blur-sm rounded-lg p-4 mb-8 ">
+          <section
+            id="about-me"
+            className="flex flex-col items-center justify-center w-full h-full"
+          >
+            <PresentationView />
+          </section>
+        </div>
+
+        {/* <SocialMediaView /> */}
       </main>
     </div>
   );
