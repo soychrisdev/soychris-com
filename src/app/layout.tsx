@@ -25,9 +25,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {(hostname === "localhost:3000" || "preview.soychris.com") && (
-            <PreviewOrDevelopmentModal />
-          )}
+          {hostname === "localhost:3000" && <PreviewOrDevelopmentModal />}
           <Navbar />
           {children}
         </ThemeProvider>
