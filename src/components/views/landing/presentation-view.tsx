@@ -30,7 +30,7 @@ export const PresentationView = () => {
         He pasado los últimos 3 años construyendo y escalando software para
         algunas empresas bastante geniales.
       </span>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 w-full text-center mt-3.5 capitalize ">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 w-full text-center capitalize mt-8">
         <div className="p-6 w-full bg-foreground rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer hover:bg-foreground/90">
           <span className="text-lg font-semibold text-background">
             experiencia <ExternalLink className="h-4 w-4 inline" />
@@ -41,11 +41,10 @@ export const PresentationView = () => {
             proyectos <ExternalLink className="h-4 w-4 inline" />
           </span>
         </div>
+        <ContactMeDialog />
       </div>
 
-      <span className="flex flex-col items-center justify-center mt-4 space-x-2">
-        <ContactMeDialog />
-      </span>
+  
     </>
   );
 };

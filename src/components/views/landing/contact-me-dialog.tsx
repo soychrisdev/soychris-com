@@ -11,15 +11,15 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MailIcon } from "lucide-react";
+import { MailCheckIcon } from "lucide-react";
 
 export const ContactMeDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="p-3 w-full bg-accent rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer hover:bg-foreground/90 ">
+      <div className="p-6 w-full bg-foreground rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer hover:bg-foreground/90">
           <span className="text-lg font-semibold text-background">
-            CONECTEMOS! <MailIcon className="h-4 w-4" />
+            Contacto <MailCheckIcon className="h-4 w-4 inline" />
           </span>
         </div>
       </DialogTrigger>
