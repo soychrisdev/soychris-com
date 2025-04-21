@@ -8,8 +8,6 @@ import {
   useMotionValue,
 } from "framer-motion";
 import { useEffect } from "react";
-import { Heading1 } from "../ui/heading-1";
-import { MultilangHello } from "./landing/greeting-multi-len";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -34,13 +32,7 @@ export const AuroraHero = () => {
       }}
       className="relative grid min-h-1/2 place-content-center overflow-hidden px-4 py-24 text-white"
     >
-      <div className="relative z-10 flex flex-col items-center">
-        <div className="flex items-center justify-center w-full h-20">
-          <Heading1>
-            <MultilangHello />
-          </Heading1>
-        </div>
-      </div>
+      <div className="relative z-10 flex flex-col items-center"></div>
 
       <div className="absolute inset-0 z-0">
         <Canvas>
