@@ -9,15 +9,9 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { Heading1 } from "@/components/ui/heading-1";
-import {
-    Book,
-    ExternalLink,
-    Github,
-    Globe,
-    Heart,
-    Smartphone,
-} from "lucide-react";
+import { Book, ExternalLink, Globe, Heart, Smartphone } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Proyectos - Christian Mesina | Desarrollador Full Stack",
@@ -389,7 +383,7 @@ export default function Projects() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                                 <Button asChild size="lg" className="px-8">
-                                    <a href="/#about-me">Conóceme más</a>
+                                    <Link href="/#about-me">Conóceme más</Link>
                                 </Button>
                                 <Button
                                     variant="outline"
