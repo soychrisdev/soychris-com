@@ -12,11 +12,6 @@ export const Navbar = () => {
           <div className="text-2xl uppercase font-extrabold">
             <Link href="/">sc</Link>
           </div>
-          <div className="hidden md:flex space-x-4 uppercase">
-            <Link href="/" className="hover:text-muted-foreground">
-              home
-            </Link>
-          </div>
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center space-x-4">
               <ThemeModeToggle />

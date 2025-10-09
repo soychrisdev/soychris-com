@@ -17,10 +17,13 @@ export const ContactMeDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-      <div className="p-6 w-full bg-foreground rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer hover:bg-foreground/90">
-          <span className="text-lg font-semibold text-background">
-            Contacto <MailCheckIcon className="h-4 w-4 inline" />
-          </span>
+        <div className="group p-6 bg-card border border-border rounded-lg shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer hover:border-primary/50">
+          <div className="flex items-center justify-center space-x-2">
+            <span className="text-base font-semibold text-card-foreground group-hover:text-primary transition-colors">
+              Contacto
+            </span>
+            <MailCheckIcon className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
         </div>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">

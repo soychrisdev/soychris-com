@@ -22,15 +22,15 @@ export const MultilangHello = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-20">
+    <div className="relative h-16 flex items-center justify-center overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
-          initial={{ y: "-100%", opacity: 0 }}
+          initial={{ y: "100%", opacity: 0 }}
           animate={{ y: "0%", opacity: 1 }}
-          exit={{ y: "100%", opacity: 0 }}
-          transition={{ duration: 0.6 }}
-          className=" top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-4xl font-bold"
+          exit={{ y: "-100%", opacity: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className="absolute inset-0 flex items-center justify-center text-3xl md:text-4xl lg:text-5xl font-bold text-foreground"
         >
           {words[index]}!
         </motion.span>
